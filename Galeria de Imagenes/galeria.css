@@ -1,0 +1,54 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+img{
+    width: 400px;
+    height: 200px;
+}
+h1{
+    text-align: center;
+    color: white;
+    background-color: #000;
+    border-radius: 20px;
+}
+.Contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    margin-bottom: 30px;
+    grid-gap: 20px;
+}
+.Contenedor .Primero,
+.Contenedor .Segundo,
+.Contenedor .Tercero,
+.Contenedor .Cuarto,
+.Contenedor .Quinto,
+.Contenedor .Sexto,
+.Contenedor .Septimo,
+.Contenedor .Octavo,
+.Contenedor .Noveno{
+    border: 5px solid #000;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+.Contenedor .Primero img,
+.Contenedor .Segundo img,
+.Contenedor .Tercero img,
+.Contenedor .Cuarto img,
+.Contenedor .Quinto img,
+.Contenedor .Sexto img,
+.Contenedor .Septimo img,
+.Contenedor .Octavo img,
+.Contenedor .Noveno img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+.Contenedor .Primero{
+    grid-column: span 2;
+}
+.Contenedor .Cuarto{
+    grid-row: span 3;
+}
